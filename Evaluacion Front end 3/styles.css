@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('IMG/rascacielos-vista-angulo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header, footer {
+    color: #436699;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #436699
+}
+
+.form-section, .table-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 600px; /* Reducir ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para mejorar la apariencia */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 10px ;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    margin-left: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #023E73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #F29F05;
+}
+
+.table-section .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.spacer {
+    height: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    .form-section, .table-section {
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
